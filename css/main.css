@@ -127,4 +127,12 @@ pre {
   margin: 0 auto;
 }
 .button {
+  background-color: #61a0af;
+  border: none;
+  color: #cd533b;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

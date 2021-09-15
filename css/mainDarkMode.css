@@ -1,0 +1,253 @@
+a:hover {
+  text-decoration: underline;
+}
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* .button {
+  background-color: #faa381;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
+/* body {
+  background-color: #ffffdd;
+} */
+.page-header {
+  height: 100vh;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/northernlights.jpg');
+}
+.page-header:after {
+  -webkit-animation: grain 8s steps(10) infinite;
+  animation: grain 8s steps(10) infinite;
+  background-image: url('https://user-images.githubusercontent.com/62988081/133406717-d16de74d-0476-4993-8633-1bfdc10d8851.png');
+  content: '';
+  height: 300%;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+@-webkit-keyframes grain {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 35%);
+    transform: translate(3%, 35%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
+  }
+}
+@keyframes grain {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 35%);
+    transform: translate(3%, 35%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
+  }
+}
+.content img {
+  display: block;
+  margin: 0px auto;
+}
+.crops {
+  margin-left: 55px;
+}
+.crops img {
+  display: inline;
+  padding: 10px;
+}
+pre {
+  color: #666;
+  font-size: 60%;
+  overflow: auto;
+  margin: 0px auto;
+}
+.main_menu {
+  margin: 0px auto;
+  padding: 20px 0px;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  text-decoration: none;
+}
+.main_menu a {
+  text-decoration: none;
+}
+.main_menu a:hover {
+  text-decoration: underline;
+}
+.item_menu {
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  color: #444;
+}
+.content {
+  max-width: 646px;
+  margin: 0px auto;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #444;
+  word-wrap: break-word;
+}
+.wide_content {
+  max-width: 1000px;
+  margin: 0px auto;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #444;
+  word-wrap: break-word;
+}
+.content_title {
+  font-weight: bold;
+  font-size: 18pt;
+}
+.footnote {
+  font-size: 8pt;
+}
+.footnotes {
+  max-width: 75%;
+  font-size: 10pt;
+  word-wrap: break-word;
+}
+.content_date {
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 8pt;
+}
+.content_tags {
+  width: 100%;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 8pt;
+}
+.nav_text {
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 8pt;
+  text-align: center;
+}
+.img-centre {
+  text-align: center;
+  display: block;
+}
+.nav_text label {
+  cursor: pointer;
+}
+.slide {
+  display: block;
+  margin: 0px auto;
+  padding: 0px 0px 25px 0px;
+  width: 500px;
+  height: 500px;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide_625 {
+  display: block;
+  margin: 0px auto;
+  padding: 0px 0px 25px 0px;
+  width: 625px;
+}
+.slide_625 img {
+  width: 100%;
+  height: 100%;
+}
+.slide_wide {
+  display: block;
+  margin: 0px auto;
+  padding: 0px 0px 25px 0px;
+  width: 600px;
+  height: 400px;
+}
+.slide_wide img {
+  width: 100%;
+  height: 100%;
+}
+.panoramic {
+  margin: 0 auto;
+}
+.button {
+  background-color: #faa381;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

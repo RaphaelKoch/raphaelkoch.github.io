@@ -20,7 +20,7 @@ p {
 } */
 .page-header {
   height: 100vh;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/northernlights.jpg');
+  background-image: url();
 }
 .page-header:after {
   -webkit-animation: grain 8s steps(10) infinite;

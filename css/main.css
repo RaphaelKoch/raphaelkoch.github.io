@@ -5,6 +5,19 @@ p {
   text-align: justify;
   text-justify: inter-word;
 }
+/* .button {
+  background-color: #faa381;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
+body {
+  background-color: #ffffdd;
+}
 .content img {
   display: block;
   margin: 0px auto;
@@ -127,9 +140,9 @@ pre {
   margin: 0 auto;
 }
 .button {
-  background-color: #61a0af;
+  background-color: #faa381;
   border: none;
-  color: #cd533b;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;

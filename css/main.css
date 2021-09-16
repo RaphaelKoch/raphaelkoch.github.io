@@ -27,15 +27,15 @@ body {
 .container {
   width: 110%;
   height: 110%;
-  /* padding: 80px 20px; */
+  padding: 80px 20px;
   transition: 0.4s ease;
 }
 .container h1 {
   text-align: center;
 }
-/* .container p {
+.container p {
   padding: 30px 0;
-} */
+}
 #checkbox {
   position: fixed;
   top: 20px;
@@ -74,7 +74,7 @@ body {
 }
 /* changing the color of the checkbox when it's toggled */
 #checkbox:checked {
-  background: rgb(12, 177, 81);
+  background: #ffffdd;
 }
 /* DarkModeEnd */
 .content img {

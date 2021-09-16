@@ -100,8 +100,8 @@ pre {
   margin: 0 auto;
 }
 .main_menu {
-  margin: 10px auto;
-  /* padding: 20px 0px; */
+  margin: 0px auto;
+  padding: 20px 0px;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
   text-decoration: none;

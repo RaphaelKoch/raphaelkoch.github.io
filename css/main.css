@@ -49,10 +49,10 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
-  width: 80px;
-  height: 40px;
+  width: 40px;
+  height: 20px;
   background: #02020a;
-  border-radius: 18px;
+  border-radius: 3px;
   cursor: pointer;
   outline: none;
 }
@@ -60,10 +60,10 @@ body {
 #checkbox::before {
   content: '';
   position: absolute;
-  width: 40px;
-  height: 35px;
+  width: 18px;
+  height: 18px;
   background-color: #ea9010;
-  border-radius: 35px;
+  border-radius: 3px;
   top: 2px;
   left: 2px;
   right: 2px;

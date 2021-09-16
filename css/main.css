@@ -70,7 +70,7 @@ body {
 }
 #checkbox:checked + .container {
   background: #02020a;
-  color: white;
+  color: #f5f5f5;
 }
 /* moving the checkbox circle when it's toggled by the user */
 #checkbox:checked::before {
@@ -93,7 +93,7 @@ body {
   padding: 10px;
 } */
 pre {
-  color: #666;
+  color: #f5f5f5;
   font-size: 60%;
   overflow: auto;
   margin: 0px auto;
@@ -113,14 +113,14 @@ pre {
 }
 .item_menu {
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: #444;
+  color: #f5f5f5;
 }
 .content {
   max-width: 646px;
   margin: 0px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
-  color: #444;
+  color: #f5f5f5;
   word-wrap: break-word;
 }
 .wide_content {
@@ -128,7 +128,7 @@ pre {
   margin: 0px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
-  color: #444;
+  color: #f5f5f5;
   word-wrap: break-word;
 }
 .content_title {
@@ -145,18 +145,18 @@ pre {
 }
 .content_date {
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: gray;
+  color: #f5f5f5;
   font-size: 8pt;
 }
 .content_tags {
   width: 100%;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: gray;
+  color: F5F5F5;
   font-size: 8pt;
 }
 .nav_text {
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: gray;
+  color: F5F5F5;
   font-size: 8pt;
   text-align: center;
 }

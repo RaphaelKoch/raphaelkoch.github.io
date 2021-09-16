@@ -99,10 +99,10 @@ pre {
   color: #666;
   font-size: 60%;
   overflow: auto;
-  margin: 0px auto;
+  margin: 10px auto;
 }
 .main_menu {
-  margin: 0px auto;
+  margin: 10px auto;
   /* padding: 20px 0px; */
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
@@ -120,7 +120,7 @@ pre {
 }
 .content {
   max-width: 646px;
-  margin: 0px auto;
+  margin: 10px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
   color: #444;
@@ -128,7 +128,7 @@ pre {
 }
 .wide_content {
   max-width: 1000px;
-  margin: 0px auto;
+  margin: 10px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
   color: #444;
@@ -172,7 +172,7 @@ pre {
 }
 .slide {
   display: block;
-  margin: 0px auto;
+  margin: 10px auto;
   padding: 0px 0px 25px 0px;
   width: 500px;
   height: 500px;
@@ -193,7 +193,7 @@ pre {
 }
 .slide_wide {
   display: block;
-  margin: 0px auto;
+  margin: 10px auto;
   padding: 0px 0px 25px 0px;
   width: 600px;
   height: 400px;
@@ -203,7 +203,7 @@ pre {
   height: 100%;
 }
 .panoramic {
-  margin: 0 auto;
+  margin: 10 auto;
 }
 .button {
   background-color: #faa381;

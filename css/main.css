@@ -74,7 +74,7 @@ body {
 }
 /* moving the checkbox circle when it's toggled by the user */
 #checkbox:checked::before {
-  left: 40px;
+  left: 38px;
 }
 /* changing the color of the checkbox when it's toggled */
 #checkbox:checked {

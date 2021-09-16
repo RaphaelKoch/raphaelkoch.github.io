@@ -22,6 +22,7 @@ p {
 } */
 body {
   background-color: #ffffdd;
+  overflow-x: hidden;
 }
 /* DarkMode */
 .container {
@@ -36,6 +37,7 @@ body {
 .container p {
   padding: 0;
 }
+
 #checkbox {
   position: fixed;
   top: 20px;

@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 .container p {
-  padding: 30px 0;
+  padding: 1px 0;
 }
 #checkbox {
   position: fixed;
@@ -59,7 +59,7 @@ body {
   position: absolute;
   width: 40px;
   height: 35px;
-  background-color: #ea9010;
+  background-color: #6b9080;
   border-radius: 35px;
   top: 2px;
   left: 2px;
@@ -70,7 +70,7 @@ body {
 }
 #checkbox:checked + .container {
   background: #050505;
-  color: #f5f5f5;
+  color: white;
 }
 /* moving the checkbox circle when it's toggled by the user */
 #checkbox:checked::before {

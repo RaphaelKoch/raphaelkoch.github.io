@@ -63,6 +63,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: #faa381;
+  top: 0;
   border-radius: 0px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -73,7 +74,7 @@ body {
 }
 /* moving the checkbox circle when it's toggled by the user */
 #checkbox:checked::before {
-  left: 10px;
+  left: 20px;
 }
 /* changing the color of the checkbox when it's toggled */
 #checkbox:checked {

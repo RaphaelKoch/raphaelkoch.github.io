@@ -8,6 +8,7 @@ a:hover {
 }
 p {
   text-align: justify;
+  margin: 20px;
   text-justify: inter-word;
 }
 /* .button {
@@ -69,7 +70,7 @@ body {
   transition: 0.3s ease;
 }
 #checkbox:checked + .container {
-  background: #02020a;
+  background: #000000;
   color: white;
 }
 /* moving the checkbox circle when it's toggled by the user */

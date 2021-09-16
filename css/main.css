@@ -23,6 +23,7 @@ p {
 body {
   background-color: #ffffdd;
   overflow-x: hidden;
+  margin: 0;
 }
 /* DarkMode */
 .container {

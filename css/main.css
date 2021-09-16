@@ -100,7 +100,7 @@ pre {
   margin: 0 auto;
 }
 .main_menu {
-  margin: 10px;
+  margin: 10px auto;
   /* padding: 20px 0px; */
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
@@ -118,7 +118,7 @@ pre {
 }
 .content {
   max-width: 646px;
-  margin: 10px;
+  margin: 10px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
   color: #444;
@@ -126,7 +126,7 @@ pre {
 }
 .wide_content {
   max-width: 1000px;
-  margin: 10px;
+  margin: 10px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
   color: #444;
@@ -135,7 +135,7 @@ pre {
 .content_title {
   font-weight: bold;
   font-size: 18pt;
-  margin: 10px;
+  margin: 10px auto;
 }
 .footnote {
   font-size: 8pt;

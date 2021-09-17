@@ -1,6 +1,7 @@
 /* DarkMode */
+
 :root {
-  --image-filter: grayscale(50%);
+  --grayscale-percentage: 50%;
 }
 /* DarkMode */
 a:hover {
@@ -72,7 +73,8 @@ body {
 #checkbox:checked + .container {
   background: #000000;
   color: white;
-  filter: saturate(10%);
+  filter: grayscale(var(--grayscale-percentage));
+  /* filter: grayscale(50%); */
 }
 /* moving the checkbox circle when it's toggled by the user */
 #checkbox:checked::before {

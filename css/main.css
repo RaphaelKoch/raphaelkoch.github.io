@@ -1,8 +1,8 @@
 /* DarkMode */
 
-:root {
+/* :root {
   --grayscale-percentage: 50%;
-}
+} */
 /* DarkMode */
 a:hover {
   text-decoration: underline;
@@ -72,9 +72,8 @@ body {
 }
 #checkbox:checked + .container {
   background: #000000;
-  color: white;
-  filter: grayscale(var(--grayscale-percentage));
-  /* filter: grayscale(50%); */
+  /* filter: grayscale(var(--grayscale-percentage)); */
+  filter: grayscale(50%);
 }
 /* moving the checkbox circle when it's toggled by the user */
 #checkbox:checked::before {

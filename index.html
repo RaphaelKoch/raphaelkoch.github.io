@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html>  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://raphaelkoch.github.io/css/main.css" rel="stylesheet" />
-    <title>Raphael Koch</title>    
+    <!-- userBaseSDK -->
+    <script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
+    <!-- userBase initialized (hopefully) -->
+    <script src="raphaelkoch.github.io/src/userBaseAccountManagement.js" type="text/javascript"></script>
+    <title>Raphael Koch</title>        
   </head>
   <body>
-<!--     Consent button-->  
-<script src="raphaelkoch.github.io/src/app.js"></script>  
-<!-- DarkMode -->
+    <!-- Added loginForm -->
+    <div id="auth-view">
+    <h1>Login</h1>
+    <form id="login-form">
+      <input id="login-username" type="text" required placeholder="Username">
+      <input id="login-password" type="password" required placeholder="Password">
+      <input type="submit" value="Sign in">
+    </form>
+    <div id="login-error"></div>    
+
+    <!-- Added signUpForm -->  
+    <div id="auth-view">
+    <h1>Create an account</h1>
+    <form id="signup-form">
+      <input id="signup-username" type="text" required placeholder="Username">
+      <input id="signup-password" type="password" required placeholder="Password">
+      <input type="submit" value="Create an account">
+    </form>
+    <div id="signup-error"></div>
+  </div>
+
+    <!-- DarkMode -->
     <input type="checkbox" id="checkbox">
     <div class="container">
-    <!-- DarkMode -->
+    
     <div class="main_menu">
       <center>
         <strong>
@@ -130,6 +153,40 @@
     </div>
     <br>
     <br>
+
+    <!-- handling forms -->
+    <script type="text/javascript">
+    userbase.init({ appId: '2825a131-4403-44ee-b787-b66c75740baf' })
+
+    /* handle logIn */
+    function handleLogin(e) {
+    e.preventDefault()
+
+    const username = document.getElementById('login-username').value
+    const password = document.getElementById('login-password').value
+
+    userbase.signIn({ username, password, rememberMe: 'none' })
+      .then((user) => alert('You signed in!'))
+      .catch((e) => document.getElementById('login-error').innerHTML = e)
+    }
+    /* handle signUp */
+    function handleSignUp(e) {
+    e.preventDefault()    
+
+    const username = document.getElementById('signup-username').value
+    const password = document.getElementById('signup-password').value
+
+    userbase.signUp({ username, password, rememberMe: 'none' })
+      .then((user) => alert('You signed up!'))
+      .catch((e) => document.getElementById('signup-error').innerHTML = e)
+    }
+    document.getElementById('login-form').addEventListener('submit', handleLogin)
+    document.getElementById('signup-form').addEventListener('submit', handleSignUp)
     
+    
+
+    
+    </script>
   </body>
 </html>
+}

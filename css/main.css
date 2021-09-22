@@ -72,8 +72,8 @@ body {
 }
 #checkbox:checked + .container {
   background: #12130f;
-  /* filter: var(--image-filter); */
-  /* filter: grayscale(var(--image-filter)); */
+  filter: var(--image-filter);
+  filter: grayscale(var(--image-filter));
   /* filter: brightness(80%); */
   color: #f5fbef;
 }

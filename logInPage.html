@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  href="https://raphaelkoch.github.io/css/main.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
+    <!-- userBase initialized (hopefully) -->
+    <script src="raphaelkoch.github.io/src/userBaseAccountManagement.js" type="text/javascript"></script>   
+    <title>Bewerbung</title>
+  </head>
+  <body>    
+    
+    <div class="main_menu">
+      <center>
+        <strong>
+          <a href="https://raphaelkoch.github.io/" class="button">Blog</a>
+          <a
+            href="https://raphaelkoch.github.io/photo_projects.html"
+            class="button"
+            >Photo Projects
+          </a>
+
+          <a href="https://raphaelkoch.github.io/about.html" class="button"
+            >About</a
+          >
+        </strong>
+      </center>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <!-- Added loginForm -->
+    <center>
+      <div id="auth-view" class="main_menu">
+      <form id="login-form">
+      <input id="login-username" type="text" required placeholder="Username">
+      <input id="login-password" type="password" required placeholder="Password">
+      <input type="submit" class="button" value="Sign in">
+    </form>
+    <div id="login-error"></div>    
+
+    
+
+    </center>
+    
+    <div class="content">
+
+    <!-- Bewerbungs-View -->
+      
+    <div id="bewerbung-view">
+      
+    <center><div id="username"></div></center>
+    <!-- Added signUpForm -->  
+    <div id="auth-view">
+     
+    <center><form id="signup-form">
+      <input id="signup-username" type="text" required placeholder="Username">
+      <input id="signup-password" type="password" required placeholder="Password">
+      <input type="submit" class="button" value="Create New Account">
+    </form>
+    <div id="signup-error"></div>
+    </div>
+    </center>
+    <br>
+    <br>
+    
+    <div id="bewerbungs"></div>
+      <center><a href="https://raphaelkoch.github.io/application.html" class="button"
+            >Go to Application</a></center>
+      
+    </div>
+    <!-- handling forms -->
+    <script type="text/javascript">
+    userbase.init({ appId: '2825a131-4403-44ee-b787-b66c75740baf' })
+
+    /* handle logIn */
+    function handleLogin(e) {
+    e.preventDefault()
+
+    const username = document.getElementById('login-username').value
+    const password = document.getElementById('login-password').value
+
+    userbase.signIn({ username, password, rememberMe: 'none' })
+      .then((user) => showBewerbungs(user.username))
+      .catch((e) => document.getElementById('login-error').innerHTML = e)
+    }
+    /* handle signUp */
+    function handleSignUp(e) {
+    e.preventDefault()    
+
+    const username = document.getElementById('signup-username').value
+    const password = document.getElementById('signup-password').value
+
+    userbase.signUp({ username, password, rememberMe: 'none' })
+      .then((user) => showBewerbungs(user.username))
+      .catch((e) => document.getElementById('signup-error').innerHTML = e)
+    }
+    /* showBewerbung */
+    function showBewerbungs(username) {
+    document.getElementById('auth-view').style.display = 'none'
+    document.getElementById('bewerbung-view').style.display = 'block'
+    document.getElementById('username').innerHTML = username
+    }
+    document.getElementById('login-form').addEventListener('submit', handleLogin)
+    document.getElementById('signup-form').addEventListener('submit', handleSignUp)
+    
+    document.getElementById('bewerbung-view').style.display = 'none'
+
+    
+    </script>
+  </body>
+</html>

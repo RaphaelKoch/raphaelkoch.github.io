@@ -1,8 +1,8 @@
 /* DarkMode */
 
-:root {
+/* :root {
   --image-filter: grayscale(50%);
-}
+} */
 /* DarkMode */
 a:hover {
   text-decoration: underline;
@@ -72,8 +72,8 @@ body {
 }
 #checkbox:checked + .container {
   background: #12130f;
-  filter: var(--image-filter);
-  filter: grayscale(var(--image-filter));
+  /* filter: var(--image-filter);
+  filter: grayscale(var(--image-filter)); */
   /* filter: brightness(50%); */
   color: #f5fbef;
 }

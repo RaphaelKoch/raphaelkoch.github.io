@@ -98,7 +98,7 @@ body {
   padding: 10px;
 }
 pre {
-  color: #666;
+  /* color: #666; */
   font-size: 60%;
   overflow: auto;
   margin: 0 auto;
@@ -118,14 +118,14 @@ pre {
 }
 .item_menu {
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: #444;
+  /* color: #444; */
 }
 .content {
   max-width: 646px;
   margin: 10px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
-  color: #444;
+  /* color: #444; */
   word-wrap: break-word;
 }
 .wide_content {
@@ -133,7 +133,7 @@ pre {
   margin: 10px auto;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
   font-size: 14pt;
-  color: #444;
+  /* color: #444; */
   word-wrap: break-word;
 }
 .content_title {
@@ -151,18 +151,18 @@ pre {
 }
 .content_date {
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: gray;
+  /* color: gray; */
   font-size: 8pt;
 }
 .content_tags {
   width: 100%;
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: gray;
+  /* color: gray; */
   font-size: 8pt;
 }
 .nav_text {
   font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  color: gray;
+  /* color: gray; */
   font-size: 8pt;
   text-align: center;
 }

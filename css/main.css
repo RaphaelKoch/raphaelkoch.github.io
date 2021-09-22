@@ -74,7 +74,7 @@ body {
   background: #12130f;
   filter: var(--image-filter);
   filter: grayscale(var(--image-filter));
-  /* filter: brightness(80%); */
+  filter: brightness(50%);
   color: #f5fbef;
 }
 /* moving the checkbox circle when it's toggled by the user */

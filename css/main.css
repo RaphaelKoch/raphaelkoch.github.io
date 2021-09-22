@@ -3,16 +3,6 @@
 /* :root {
   --image-filter: grayscale(50%);
 } */
-a:link {
-  color: #90bede;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: #98473e;
-  background-color: transparent;
-  text-decoration: none;
-}
 /* DarkMode */
 a:hover {
   text-decoration: underline;

@@ -53,7 +53,7 @@ body {
   -o-appearance: none;
   width: 40px;
   height: 20px;
-  background: #12130f;
+  background: #30343f; /* 12130f */
   border-radius: 0px;
   cursor: pointer;
   outline: none;
@@ -71,7 +71,7 @@ body {
   transition: 0.3s ease;
 }
 #checkbox:checked + .container {
-  background: #12130f;
+  background: #30343f; /* 12130f */
   /* filter: var(--image-filter);
   filter: grayscale(var(--image-filter)); */
   /* filter: brightness(50%); */

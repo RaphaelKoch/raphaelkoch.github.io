@@ -3,15 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link  href="https://raphaelkoch.github.io/css/main.css" rel="stylesheet" />      
-    <title>Bewerbung</title>
+    <link href="https://raphaelkoch.github.io/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" />
+    <style>
+      .button {
+        background-color: #FAA381;ce796b
+        border:  none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      body {
+        background-color: #FFFFDD;
+      }
+    </style>
+    <title>About</title>
   </head>
-  <a id="top"></a>
-  <body>    
-    <!-- DarkMode -->
-    <input type="checkbox" id="checkbox">
-    <div class="container">
 
+  <body>
     <div class="main_menu">
       <center>
         <strong>
@@ -22,23 +34,22 @@
             >Photo Projects
           </a>
 
-          <a href="https://raphaelkoch.github.io/about.html" class="button"
-            >About</a
+          <a href="https://raphaelkoch.github.io/bewerbung.html" class="button"
+            >Bewerbung</a
           >
-          <a href="https://github.com/RaphaelKoch/raphaelkoch.github.io/files/7434150/BewerbungRaphaelKoch.pdf" class="button"
-            >Application as PDF</a
-          >
-
         </strong>
       </center>
-    </div>       
-    <div class="content">    
-    <center><h2>Bewerbung</h2></center>
-    <div id="bewerbungs"></div>  
-    <br>    
-        <p>
+    </div>
+
+    <div class="content">
+      <div class="content_title"><center>Raphael Koch</center></div>
+
+      <br />
+      <br>
+      <p>
         <strong>Anschreiben:</strong> 
-        <br>      
+        <br>
+        <br>
         <br>
 
         Sehr geehrter Herr von Behren,
@@ -49,7 +60,7 @@
         Intan Media Services GmbH in Osnabrück, welche ich dort aus gegebenem Anlass nicht mehr weiterführen kann.
         <br>
         <br>
-        Zuvor arbeitete ich im Gastronomie-Bereich, in welchem es mir Spaß gemacht hat, anspruchsvolle Aufgaben und Herausforderungen im Team zu meistern
+        Zuvor arbeitete ich im Gastronomie-Bereich, in welchem es mir Spaß gemacht hat, anspruchsvolle Aufgaben und Herausforderungen im Team zu meistern,
         sowie die Verantwortung für einen eigenen Betrieb zu übernehmen.
         <br>
         <br>
@@ -71,7 +82,7 @@
         zu sein.
         <br>
         <br>
-        Mit freundlichen Grüßen
+        Mit freundlichen Grüßen,
         <br>
         <br>
         Raphael Koch
@@ -101,7 +112,10 @@
         <br>
         <strong>Lebenslauf:</strong>
         <ul>
-        <br>         
+        <br>
+        <br>
+            
+          
           <li>
           2008-2011 
           <br> 
@@ -180,71 +194,28 @@
 
       <br />
       
-      <center><strong>
+      <strong>
         <a
           href="https://www.google.com/maps/place/52%C2%B016'41.8%22N+8%C2%B002'36.5%22E"
           class="button"
           >Where?</a
         >
       </strong>
-      
+      <br />
+      <br />
       <strong>
         <a href="mailto:glenngrkoch@gmail.com" class="button">Mail</a>
       </strong>
-      
+      <br />
+      <br>
       <strong>
         <a href="https://www.instagram.com/_raphaellllo" class="button"
           >Instagram</a
-        >
-        <a href="#top" class="button">Back to top</a>
-        <a href="https://github.com/RaphaelKoch/raphaelkoch.github.io/files/7434150/BewerbungRaphaelKoch.pdf" class="button"
-            >Application as PDF</a
-          ></strong
+        ></strong
       >
-    
-    </center>
       <br />
       <br>
       
     </div>
-    <!-- handling forms -->
-    <!-- <script type="text/javascript">
-    userbase.init({ appId: '2825a131-4403-44ee-b787-b66c75740baf' }) -->
-
-    <!-- /* handle logIn */ -->
-    <!-- function handleLogin(e) {
-    e.preventDefault() -->
-
-    <!-- const username = document.getElementById('login-username').value
-    const password = document.getElementById('login-password').value -->
-
-    <!-- userbase.signIn({ username, password, rememberMe: 'none' })
-      .then((user) => showBewerbungs(user.username))
-      .catch((e) => document.getElementById('login-error').innerHTML = e)
-    } -->
-    <!-- /* handle signUp */
-    function handleSignUp(e) {
-    e.preventDefault()    --> 
-
-    <!-- const username = document.getElementById('signup-username').value
-    const password = document.getElementById('signup-password').value -->
-
-    <!-- userbase.signUp({ username, password, rememberMe: 'none' })
-      .then((user) => showBewerbungs(user.username))
-      .catch((e) => document.getElementById('signup-error').innerHTML = e)
-    } -->
-    <!-- /* showBewerbung */
-    function showBewerbungs(username) {
-    document.getElementById('auth-view').style.display = 'none'
-    document.getElementById('bewerbung-view').style.display = 'block'
-    document.getElementById('username').innerHTML = username
-    } -->
-    <!-- document.getElementById('login-form').addEventListener('submit', handleLogin)
-    document.getElementById('signup-form').addEventListener('submit', handleSignUp)
-    
-    document.getElementById('bewerbung-view').style.display = 'none' -->
-
-    
-    </script>
   </body>
 </html>

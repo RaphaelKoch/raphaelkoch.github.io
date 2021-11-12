@@ -29,18 +29,17 @@ function SlotMachine(container, reels, callback, options) {
 
   const defaults = {
     reelHeight: 1200,
-    reelWidth:  200,
+    reelWidth: 200,
     reelOffset: 20,
     slotYAxis: 0,
-    animSpeed:  1000,
-    rngFunc: function() {
-
+    animSpeed: 1000,
+    rngFunc: function () {
       // The weakest link.
       return Math.random();
     },
   };
 
-  (function() {
+  (function () {
     self.options = Object.assign(defaults, options);
 
     if (reels.length > 0) {
@@ -85,7 +84,7 @@ function SlotMachine(container, reels, callback, options) {
     const div = document.createElement('div');
     div.classList.add('slots');
 
-    reels.forEach(reel => {
+    reels.forEach((reel) => {
       const elm = createReelElm(reel, reel.symbols[0].position);
 
       div.appendChild(elm);
@@ -132,7 +131,7 @@ function SlotMachine(container, reels, callback, options) {
    */
   function createStripElm(config, startPos = 0) {
     const stripHeight = getStripHeight();
-    const stripWidth  = getStripWidth();
+    const stripWidth = getStripWidth();
 
     const segmentDeg = 360 / REEL_SEGMENT_TOTAL;
 
@@ -143,9 +142,9 @@ function SlotMachine(container, reels, callback, options) {
     const marginTop = transZ + stripHeight / 2;
 
     const ul = document.createElement('ul');
-    ul.style.height    = stripHeight + 'px';
-    ul.style.marginTop = marginTop   + 'px';
-    ul.style.width     = stripWidth  + 'px';
+    ul.style.height = stripHeight + 'px';
+    ul.style.marginTop = marginTop + 'px';
+    ul.style.width = stripWidth + 'px';
     ul.classList.add('strip');
 
     for (let i = 0; i < REEL_SEGMENT_TOTAL; i++) {
@@ -153,13 +152,13 @@ function SlotMachine(container, reels, callback, options) {
       li.append(i.toString());
 
       const imgPosY = getImagePosY(i, startPos);
-      const rotateX = (REEL_SEGMENT_TOTAL * segmentDeg) - (i * segmentDeg);
+      const rotateX = REEL_SEGMENT_TOTAL * segmentDeg - i * segmentDeg;
 
       // Position image per the strip angle/container radius.
       li.style.background = `url(${config.imageSrc}) 0 ${imgPosY}px`;
-      li.style.height     = stripHeight + 'px';
-      li.style.width      = stripWidth  + 'px';
-      li.style.transform  = `rotateX(${rotateX}deg) translateZ(${transZ}px)`;
+      li.style.height = stripHeight + 'px';
+      li.style.width = stripWidth + 'px';
+      li.style.transform = `rotateX(${rotateX}deg) translateZ(${transZ}px)`;
 
       ul.appendChild(li);
     }
@@ -207,7 +206,7 @@ function SlotMachine(container, reels, callback, options) {
   function spinReels() {
     const payLine = [];
 
-    reels.forEach(reel => {
+    reels.forEach((reel) => {
       const selected = selectRandSymbol(reel.symbols);
       const startPos = selected.position;
 
@@ -258,7 +257,7 @@ function SlotMachine(container, reels, callback, options) {
    *
    * @return {Number}
    */
-  function getRandomInt(min = 1, max = 10) {
+  function getRandomInt(min = 1, max = 100) {
     const minNum = Math.ceil(min);
     const maxNum = Math.floor(max);
 
@@ -278,7 +277,7 @@ function SlotMachine(container, reels, callback, options) {
    */
   function getImagePosY(index, position) {
     return -Math.abs(
-      (getStripHeight() * index) + (position - self.options.reelOffset)
+      getStripHeight() * index + (position - self.options.reelOffset)
     );
   }
 
@@ -317,7 +316,7 @@ function SlotMachine(container, reels, callback, options) {
   /**
    * Protected members.
    */
-  this.play = function() {
+  this.play = function () {
     dispatch(spinReels);
   };
 }
@@ -325,7 +324,7 @@ function SlotMachine(container, reels, callback, options) {
 /**
  * Set global/exportable instance, where supported.
  */
-window.slotMachine = function(container, reels, callback, options) {
+window.slotMachine = function (container, reels, callback, options) {
   return new SlotMachine(container, reels, callback, options);
 };
 

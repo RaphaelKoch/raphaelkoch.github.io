@@ -6,6 +6,7 @@
       rel="stylesheet"
       type="text/css"
       href="https://raphaelkoch.github.io/slot/dist/slot-machine.css"
+      media="all"
     />
     <link
       rel="stylesheet"
@@ -153,6 +154,9 @@
   </head>
   <body>
     <div id="slot-machine" class="slot-machine"></div>
+    <script type="text/javascript">
+      var slotMachine = slotMachine(container, reels, callback, options);
+    </script>
 
     <button id="play-button">Play</button>
   </body>

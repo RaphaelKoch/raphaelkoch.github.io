@@ -33,13 +33,13 @@ function SlotMachine(container, reels, callback, options) {
     reelOffset: 20,
     slotYAxis: 0,
     animSpeed: 1000,
-    rngFunc: function () {
+    rngFunc: function() {
       // The weakest link.
       return Math.random();
     },
   };
 
-  (function () {
+  (function() {
     self.options = Object.assign(defaults, options);
 
     if (reels.length > 0) {
@@ -136,7 +136,7 @@ function SlotMachine(container, reels, callback, options) {
     const segmentDeg = 360 / REEL_SEGMENT_TOTAL;
 
     const transZ = Math.trunc(
-      Math.tan(90 / Math.PI - segmentDeg) * (stripHeight * 0.5) * 4
+        Math.tan(90 / Math.PI - segmentDeg) * (stripHeight * 0.5) * 4,
     );
 
     const marginTop = transZ + stripHeight / 2;
@@ -277,7 +277,7 @@ function SlotMachine(container, reels, callback, options) {
    */
   function getImagePosY(index, position) {
     return -Math.abs(
-      getStripHeight() * index + (position - self.options.reelOffset)
+        getStripHeight() * index + (position - self.options.reelOffset),
     );
   }
 
@@ -316,7 +316,7 @@ function SlotMachine(container, reels, callback, options) {
   /**
    * Protected members.
    */
-  this.play = function () {
+  this.play = function() {
     dispatch(spinReels);
   };
 }
@@ -324,7 +324,7 @@ function SlotMachine(container, reels, callback, options) {
 /**
  * Set global/exportable instance, where supported.
  */
-window.slotMachine = function (container, reels, callback, options) {
+window.slotMachine = function(container, reels, callback, options) {
   return new SlotMachine(container, reels, callback, options);
 };
 
